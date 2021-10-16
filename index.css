@@ -1,0 +1,440 @@
+body{
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+
+.task-list{
+    font-size: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-stretch: expanded;
+}
+
+#tasks{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+
+#lists{
+    font-size: 1.5em;
+    font-weight: 100;
+    color: black;
+}
+
+.addlist{
+    display: flex;
+    width: 225px;
+    justify-content: space-between;
+}
+
+.plusIcon{
+    font-size: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.box3 {
+    line-height: 70px;
+    margin-top: 10px;
+    font-size: 40px;
+    color: black;
+}
+
+i{
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    height: 20px;
+    width: 20px;
+    padding: 15px
+}
+
+.noItem{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 55px;
+}
+
+
+.addListPopUp{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 200px;
+    width: 387px;
+    border: 3px solid red;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 3;
+    box-shadow: 5px 8px 10px 3px rgba(146, 143, 143, 0.533);
+    display: none;
+    
+}
+
+#addnewlist {
+    margin-top: 20px;
+    color: red;
+    font-size: 25px;
+}
+
+.nameOfNewList{
+    height: 40px;
+    width: 290px;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin-top: 17px;
+}
+
+.add {
+    height: 30px;
+    width: 75px;
+    border: 3px solid red;
+    border-radius: 44px;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+.close{
+    height: 30px;
+    width: 75px;
+    border: 3px solid red;
+    border-radius: 44px;
+    margin-top: -56px;
+    margin-left: 247px;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+.cardsContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards{
+    min-height: 270px;
+    width: 310px;
+    border: 2px solid red;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 17px;
+    margin-right: 80px;
+    box-shadow: 9px 11px 15px grey;
+    position: relative;
+}
+.removeIcon{
+    position: absolute;
+    bottom: 10px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.plusbtn{
+    position: absolute;
+    bottom: 10px;
+    right: 68px;
+    cursor: pointer;
+}
+.headings{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.addItemPopup{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 200px;
+    width: 387px;
+    border: 3px solid red;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 3;
+    box-shadow: 5px 8px 10px 3px rgba(146, 143, 143, 0.533);
+    display: none;
+}
+
+
+
+
+
+.singleCardHeading{
+    height: 202px;
+    width: 320px;
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+#texttriptoparis {
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: 900;
+    font-stretch: expanded;
+    color: black;
+}
+.back {
+    margin-left: 60px;
+    margin-top: -54px;
+    font-size: 49px;
+    color: gray;
+}
+.second {
+    margin-top: 50px;
+}
+
+.backIcon{
+    margin-left: -120px;
+    cursor: pointer;
+}
+
+
+
+.single-style div{    
+    min-height: 350px;
+    height: 350px;    
+    /* width: 100%; */
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.single-style{
+   margin: auto; 
+}
+.single-style div .tasklistitem{    
+ display: block;
+ 
+}
+
+
+@media screen and  (max-width:600px) {
+    .header {
+        display: flex;
+        margin-top: 50px;
+    }
+    .task-list {
+        font-size: 32px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-stretch: expanded;
+        width: 234px;
+    }
+    .addlist {
+        display: flex;
+        width: 210px;
+        justify-content: space-between;
+    }
+    .plusIcon {
+        font-size: 40px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        margin-top: 3px;
+        margin-left: 100px;
+    }
+    .box3 {
+        line-height: 70px;
+        margin-top: 10px;
+        font-size: 40px;
+        color: white;
+        display: none;
+    }
+    .noItem {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 48px;
+    }
+
+
+    .addListPopUp {
+        position: absolute;
+        top: -49px;
+        left: 22px;
+        background-color: white;
+        height: 152px;
+        width: 294px;
+        border: 3px solid red;
+        margin: auto;
+        margin-top: 250px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+        z-index: 3;
+        box-shadow: 5px 8px 10px 3px rgb(146 143 143 / 53%);
+        display: none;
+    }
+    #addnewlist {
+        margin-top: 8px;
+        color: red;
+        font-size: 25px;
+    }
+    .nameOfNewList {
+        height: 34px;
+        width: 263px;
+        border: 2px solid red;
+        border-radius: 5px;
+        margin-top: 17px;
+    }
+    .add {
+        height: 19px;
+        width: 64px;
+        border: -3px solid red;
+        border-radius: 44px;
+        margin-top: 10px;
+        margin-left: 8px;
+        font-size: 21px;
+        padding: 10px;
+        color: white;
+        background-color: red;
+    }
+    .close {
+        height: 16px;
+        width: 60px;
+        border: 3px solid red;
+        border-radius: 44px;
+        margin-top: -39px;
+        margin-left: 198px;
+        font-size: 19px;
+        padding: 10px;
+        color: white;
+        background-color: red;
+    }
+
+
+    .cards {
+        height: 270px;
+        width: 240px;
+        border: 2px solid red;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 10px;
+        border-radius: 17px;
+        margin-right: 11px;
+
+    }
+    .removeIcon {
+        position: absolute;
+        bottom: 68px;
+        right: 6px;
+    }
+
+
+    /* adding data into card   */
+    .addCardDataPopup {
+        position: absolute;
+        top: 201px;
+        left: 16px;
+        background-color: white;
+        height: 161px;
+        width: 303px;
+        border: 3px solid red;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+        z-index: 3;
+        box-shadow: 5px 8px 10px 3px rgb(146 143 143 / 53%);
+        display: none;
+    }
+    #addnewlist {
+        margin-top: 8px;
+        color: red;
+        font-size: 25px;
+    }
+    .nameOfNewList {
+        height: 34px;
+        width: 276px;
+        border: 2px solid red;
+        border-radius: 5px;
+        margin-top: 17px;
+    }
+    .add {
+        height: 19px;
+        width: 64px;
+        border: -3px solid red;
+        border-radius: 44px;
+        margin-top: 15px;
+        margin-left: 17px;
+        font-size: 21px;
+        padding: 10px;
+        color: white;
+        background-color: red;
+    }
+    .close {
+        height: 17px;
+        width: 66px;
+        border: 3px solid red;
+        border-radius: 44px;
+        margin-top: -42px;
+        margin-left: 188px;
+        font-size: 19px;
+        padding: 10px;
+        color: white;
+        background-color: red;
+    }
+
+    .cardsContainer i{
+        display: none;
+    }
+    
+    .single-style div{    
+        min-height: 350px;
+        height: 350px;    
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    
+    .single-style{
+       margin: auto; 
+    }
+    .single-style div .tasklistitem{    
+     display: block;
+    }
+    
+    .cards {
+        max-height: 80px;
+        min-height: 80px;
+        height: 80px;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .cards hr{
+        display: none;
+    }
+
+    .single-style hr{    
+        display: block;
+    }
+    .tasklistitem{    
+        display: none;
+    }
+
+}

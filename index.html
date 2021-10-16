@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-JS Project</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="singleCardHeading">
+        <div class="first">
+            <font id="texttriptoparis">Trip to Paris</font>
+        </div>
+        <div class="second">
+            <i class="fas fa-arrow-left backIcon" onclick="backToMainList()"></i>
+            <div class="back">Back</div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="header">
+            <div class="task-list">
+                <font id="tasks" style="font-weight:bolder">Tasks </font>
+                <font id="lists" style="font-weight: 100;">Lists</font>
+            </div>
+            <div class="addlist">
+                <div class="plusIcon"><i class="fas fa-plus"></i></div>
+                <div class="box3">Add Lists</div>
+            </div>
+        </div>
+    </div>
+    <div class="noItem"> No Items in the Todo List </div>
+
+    <div class="addListPopUp">
+        <div id="addnewlist">Add New List</div>
+        <input class="nameOfNewList" id="newList" value="" type="text">
+        <div class="add">ADD</div>
+        <div class="close">CLOSE</div>
+    </div>
+
+    <div class="cardsContainer"></div>
+    <div class="singlecardcontainer"></div>
+
+
+    <div class="addItemPopup">
+        <div id="addnewlist">Add New Items</div>
+        <input class="nameOfNewList" id="cardValue" value="" type="text">
+        <div class="add" onClick="addingDataIntoCard(this)">ADD</div>
+        <div class="close" onclick="closeAddDataPopup()">CLOSE</div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
